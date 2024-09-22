@@ -14,22 +14,22 @@ function setup() {
 
   b = 0;
   w = 255;
-  a = 45;
+  a = 10;
   hs = 90;
   vs = 90;
 
-  backgroundColor = color(252, 241, 226);
+  backgroundColor = color(15, 15, 15);
 
   background(backgroundColor);
 
   noStroke();
 
-  verticalColor = color(w, w, w, 45);
-  horizontalColor = color(b, b, b, 45);
+  verticalColor = color(w, w, w, 60);
+  horizontalColor = color(b, b, b, 60);
 
   drawH(hs, vs);
 
-  frameRate(20);
+  frameRate(18);
 }
 
 function draw() {
@@ -62,6 +62,8 @@ function draw() {
   verticalColor = color(w, w, w, a);
   horizontalColor = color(b, b, b, a);
 
+  stroke(255, 204, 0,45);
+  strokeWeight(6);
   drawH(hs, vs);
 }
 
